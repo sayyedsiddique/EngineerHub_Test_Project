@@ -92,4 +92,12 @@
     </section>
     <footer></footer>
   </body>
+
+  <script>
+    const hamburger = document.querySelector(".burgerMenu_container")
+    hamburger.onclick = function() {
+      const navBarContainer = document.querySelector(".nav_menu_container")
+      navBarContainer.classList.toggle("active")
+    }
+  </script>
 </html>

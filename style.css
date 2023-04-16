@@ -120,9 +120,13 @@ html {
     right: 0;
     width: 100vw;
     background-color: var(--secondary-color);
-    height: 700px;
-    transition: 0.2s;
+    height: 0;
+    transition: 0.5s;
     z-index: 10;
+  }
+
+  .nav_menu_container.active{
+    height: 700px;
   }
   
   .nav_menu_container ul{
@@ -130,10 +134,17 @@ html {
     width: fit-content;
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav_menu_container.active ul{
+    height: 700px;
+    opacity: 1;
   }
 
   .nav_menu_container ul li{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .nav_menu_container ul li a{
