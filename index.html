@@ -20,25 +20,27 @@
       rel="stylesheet"
     />
     <!-- Font Awesome Link-->
-    <script src="https://kit.fontawesome.com/5e2365751d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5e2365751d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navigation menu START -->
     <nav class="nav_container">
       <div class="logo">
-        <h1>My Website</h1>
+        <h1>SYED SIDDIQUE</h1>
       </div>
       <div class="nav_menu_container">
         <ul class="nav_menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#" class="">About</a></li>
-            <li><a href="#" class="">Contact</a></li>
-          </ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" class="">About</a></li>
+          <li><a href="#" class="">Contact</a></li>
+        </ul>
       </div>
-      
-      <div class="contactUs_btn_container">
 
-          <button class="primary_btn">Contact Us</button>
+      <div class="contactUs_btn_container">
+        <button class="primary_btn">Contact Us</button>
       </div>
       <div class="burgerMenu_container">
         <i class="fa-solid fa-bars"></i>
@@ -46,6 +48,7 @@
     </nav>
     <!-- Navigation menu END -->
 
+    <!-- Hero section START -->
     <section class="hero_section">
       <div class="left_container">
         <h1>
@@ -64,6 +67,9 @@
         />
       </div>
     </section>
+    <!-- Hero section END -->
+
+    <!-- Brand logo section START -->
     <section class="brand_logo_container">
       <div class="brand_logo_item">
         <img
@@ -90,14 +96,80 @@
         />
       </div>
     </section>
-    <footer></footer>
+    <!-- Brand logo section END -->
+
+    <section class="my_skill_container">
+      <div class="title_container">
+        <h1 class="main_heading">My Front-end Skills</h1>
+        <p class="common_des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque
+          porro corporis quisquam iure, ducimus eius esse tempora culpa beatae
+          veritatis tempore! Nobis ipsa dolores dolorum earum! Id, temporibus
+          ex?
+        </p>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <i class="fa-brands fa-react fa-4x"></i>
+          <p class="common_des">
+            I have a 1+ year experience in react and i have good knowleged about
+            Redux,React-Query,React-Router,Single page application.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <p class="common_des">
+            I have a 1+ year experience in HTML and i know how we used html
+            language and how to use it in a better way.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
+          <p class="common_des">
+            I have a 1+ year experience in CSS and i know how to make responsive
+            website for all devices.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-brands fa-square-js fa-4x"></i>
+          <p class="common_des">
+            I have a 1+ year experience in Javascript and i know all major
+            concepts of javascript like it's behevior, OOPS ability, ES6
+            concepts and problem solving logic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer_container">
+      <h3 class="">Follow Us</h3>
+      <div class="social_icon_container">
+        <div class="social_icon">
+          <a href="https://www.linkedin.com/in/sayyed-siddique-834245255/">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+        <div class="social_icon">
+          <a href="https://www.instagram.com/sayyedsiddique_official/">
+            <i class="fa-brands fa-square-instagram fa-2x"></i>
+          </a>
+        </div>
+        <div class="social_icon">
+          <a href="https://twitter.com/siddiq1230">
+            <i class="fa-brands fa-square-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2023 Inc. All Rights Reserved.</p>
+    </footer>
   </body>
 
   <script>
-    const hamburger = document.querySelector(".burgerMenu_container")
-    hamburger.onclick = function() {
-      const navBarContainer = document.querySelector(".nav_menu_container")
-      navBarContainer.classList.toggle("active")
-    }
+    const hamburger = document.querySelector(".burgerMenu_container");
+    hamburger.onclick = function () {
+      const navBarContainer = document.querySelector(".nav_menu_container");
+      navBarContainer.classList.toggle("active");
+    };
   </script>
 </html>

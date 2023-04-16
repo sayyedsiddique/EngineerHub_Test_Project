@@ -8,7 +8,9 @@
   --secondary-color: #171f3a;
   --text-color: #171f3a;
   --btn-primary-bg-color: #51c35d;
-  --text-white: #fff
+  --text-white: #fff;
+  --gray-color: #676867;
+  --light-green-white: #eaffec;
 }
 
 html {
@@ -23,6 +25,10 @@ html {
   align-items: center;
   padding: 1rem 2rem;
   /* background-color: rgb(219, 219, 219); */
+}
+
+.nav_container .logo h1{
+  color: var(--text-color);
 }
 
 .nav_menu_container ul {
@@ -81,7 +87,7 @@ html {
 }
 
 .left_container h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--text-color);
 }
@@ -97,6 +103,7 @@ html {
   width: 60%;
 }
 
+/* Brand logo section START */
 .brand_logo_container {
   width: 100%;
   display: flex;
@@ -111,7 +118,112 @@ html {
 .brand_logo_container .brand_logo_item img {
   width: 35%;
 }
+/* Brand logo section END */
 
+/* My skill section START */
+.my_skill_container {
+  margin-top: 2rem;
+}
+
+.my_skill_container .card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.title_container {
+  width: 50%;
+  margin: auto;
+}
+
+.main_heading {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.common_des {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.fa-brands {
+  margin-bottom: 1rem;
+}
+
+.card {
+  padding: 2rem;
+  /* margin: 1rem; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--btn-primary-bg-color);
+  color: var(--text-white);
+  border-radius: 5px;
+  width: 300px;
+}
+
+.card .common_des {
+  color: var(--text-white);
+}
+/* My skill section END */
+
+/* Footer section START */
+
+.footer_container{
+  padding: 2rem;
+  background-color: var(--secondary-color);
+}
+.footer_container h3 {
+  text-align: center;
+  color: var(--text-white);
+}
+
+.social_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_icon {
+  background: var(--text-white);
+  border-radius: 50%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.social_icon .fa-brands{
+  color: var(--btn-primary-bg-color);
+  margin: 1rem;
+}
+
+.footer_container p{
+  color: var(--text-white);
+  text-align: center;
+}
+
+/* laptop */
+@media screen and (max-width: 1024px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+  .left_container h1{
+    font-size: 2rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 425px) {
   .nav_menu_container {
     position: absolute;
@@ -125,11 +237,11 @@ html {
     z-index: 10;
   }
 
-  .nav_menu_container.active{
+  .nav_menu_container.active {
     height: 700px;
   }
-  
-  .nav_menu_container ul{
+
+  .nav_menu_container ul {
     margin: 80px auto 0px auto;
     width: fit-content;
     display: flex;
@@ -138,16 +250,16 @@ html {
     opacity: 0;
   }
 
-  .nav_menu_container.active ul{
+  .nav_menu_container.active ul {
     height: 700px;
     opacity: 1;
   }
 
-  .nav_menu_container ul li{
+  .nav_menu_container ul li {
     margin-bottom: 12px;
   }
 
-  .nav_menu_container ul li a{
+  .nav_menu_container ul li a {
     color: var(--text-white);
   }
   /* .nav_menu ul{
@@ -157,6 +269,15 @@ html {
   .hero_section {
     flex-direction: column-reverse;
     z-index: 1;
+  }
+
+  .left_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .left_container p {
+    text-align: center;
   }
   .right_container {
     text-align: center;
@@ -168,5 +289,13 @@ html {
 
   .contactUs_btn_container {
     display: none;
+  }
+
+  .title_container {
+    width: 85%;
+  }
+
+  .card {
+    margin-bottom: 1rem;
   }
 }
