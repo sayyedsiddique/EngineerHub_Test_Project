@@ -163,13 +163,40 @@
       </div>
       <p>&copy; 2023 Inc. All Rights Reserved.</p>
     </footer>
+
+    <!-- Toast -->
+    <div class="toast active">
+      <i class="fa-sharp fa-regular fa-xmark fa-1x"></i>
+      <h1>Are you sure?</h1>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+        reprehenderit aliquam deleniti asperiores quibusdam officiis iste
+        molestias. Esse consequatur, expedita eaque, eos alias cumque rem sed
+        adipisci, suscipit doloribus neque.
+      </div>
+    </div>
   </body>
 
   <script>
+    // hamburger handler
     const hamburger = document.querySelector(".burgerMenu_container");
     hamburger.onclick = function () {
       const navBarContainer = document.querySelector(".nav_menu_container");
       navBarContainer.classList.toggle("active");
     };
+
+    // toast handler
+    const toast = document.querySelector(".toast");
+    toast.onclick = function () {
+      toast.classList.toggle("active");
+    };
+
+    // contact handler
+    const contact = document.querySelector(".primary_btn")
+    contact.onclick = function (){
+      const toast = document.querySelector(".toast"); 
+      toast.classList.toggle("active");
+    }
+
   </script>
 </html>

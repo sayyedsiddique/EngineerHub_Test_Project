@@ -27,7 +27,7 @@ html {
   /* background-color: rgb(219, 219, 219); */
 }
 
-.nav_container .logo h1{
+.nav_container .logo h1 {
   color: var(--text-color);
 }
 
@@ -64,6 +64,7 @@ html {
   font-size: 0.8rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
 }
 
 .burgerMenu_container {
@@ -160,7 +161,7 @@ html {
   padding: 2rem;
   /* margin: 1rem; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: var(--btn-primary-bg-color);
+  background-color: var(--btn-primary-bg-color) !important;
   color: var(--text-white);
   border-radius: 5px;
   width: 300px;
@@ -173,7 +174,7 @@ html {
 
 /* Footer section START */
 
-.footer_container{
+.footer_container {
   padding: 2rem;
   background-color: var(--secondary-color);
 }
@@ -195,15 +196,40 @@ html {
   cursor: pointer;
 }
 
-.social_icon .fa-brands{
+.social_icon .fa-brands {
   color: var(--btn-primary-bg-color);
   margin: 1rem;
 }
 
-.footer_container p{
+.footer_container p {
   color: var(--text-white);
   text-align: center;
 }
+
+/* Toast section START */
+.toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background-color: #171f3a;
+  color: var(--text-white);
+  padding: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.toast.active {
+  display: block;
+}
+
+.fa-sharp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* Toast section END */
 
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -214,8 +240,7 @@ html {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-
-  .left_container h1{
+  .left_container h1 {
     font-size: 2rem;
   }
   .card {
@@ -299,10 +324,10 @@ html {
     margin-bottom: 1rem;
   }
 
-  .social_icon{
+  .social_icon {
     margin: 0.5rem;
   }
-  .fa-2x{
+  .fa-2x {
     font-size: 1.5em !important;
   }
 }
